@@ -224,8 +224,7 @@ local function CocaBreak()
 		isProcessing = false
 	end)
 end
-----
-----
+
 local function CocaQBreak()
 	isProcessing = true
 	local playerPed = PlayerPedId()
@@ -253,8 +252,6 @@ local function CocaQBreak()
 		isProcessing = false
 	end)
 end
-----
-----
 
 local function CookCrack()
 	isProcessing = true
@@ -385,7 +382,6 @@ RegisterNetEvent('coma-coke:ProcessCocaPowder', function()
 end)
 
 RegisterNetEvent('coma-coke:ProcessCocaBrick', function()
-
 	if Config.PickleXP then
 		local level = exports['pickle_xp']:GetLevel("drugs")
 		if level >= Config.XPReq.BrickUpRawCoke then
@@ -484,7 +480,6 @@ RegisterNetEvent('coma-coke:ProcessCocaQBrick', function()
 	end
 end)
 
-
 RegisterNetEvent('coma-coke:processCocaBreak', function()
 	if Config.PickleXP then
 		local level = exports['pickle_xp']:GetLevel("drugs")
@@ -523,8 +518,7 @@ RegisterNetEvent('coma-coke:processCocaBreak', function()
 		end
 	end
 end)
-------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
+
 RegisterNetEvent('coma-coke:ProcessCocaQBreak', function()
 	if Config.PickleXP then
 		local level = exports['pickle_xp']:GetLevel("drugs")
@@ -564,9 +558,7 @@ RegisterNetEvent('coma-coke:ProcessCocaQBreak', function()
 	end
 end)
 
-------------------------------------------------------------------------------------------------------------
 RegisterNetEvent('coma-coke:ProcessCookCrack', function()
-------------------------------------------------------------
 if Config.PickleXP then
 		local level = exports['pickle_xp']:GetLevel("drugs")
 		if level >= Config.XPReq.CookCokeToCrack then
@@ -594,7 +586,6 @@ if Config.PickleXP then
 			QBCore.Functions.Notify(Lang:t("error.no_xp"), 'error')
 		end
 	else
-------------------------------------------------------------
 		local coords = GetEntityCoords(PlayerPedId())
 		if #(coords-Config.Zones.CookCrack.coords) < 5 then
 			if not isProcessing then
