@@ -782,42 +782,41 @@ RegisterNetEvent('coma-coke:ExitCokeLab', function()
 	end
 end)
 
---Spawns a stove with pot on top in the location for cooking crack
-local crackStove = `prop_cooker_03`
-if not HasModelLoaded(crackStove) then
-    RequestModel(crackStove)
+Citizen.CreateThread(function()
+	--Spawns a stove with pot on top in the location for cooking crack
+	local crackStove = `prop_cooker_03`
+	if not HasModelLoaded(crackStove) then
+		RequestModel(crackStove)
 
-    while not HasModelLoaded(crackStove) do
-        Citizen.Wait(1)
-    end
-end
+		while not HasModelLoaded(crackStove) do
+			Citizen.Wait(1)
+		end
+	end
 
-local stove = CreateObject(crackStove, vector3(1103.50, -3196.10, -39.99), true)
-SetEntityRotation(stove, 0.0, 0, -90.0, 0, true)
-SetEntityAsMissionEntity(stove, true, true)
-FreezeEntityPosition(stove, true)
+	local stove = CreateObject(crackStove, vector3(1103.50, -3196.10, -39.99), true)
+	SetEntityRotation(stove, 0.0, 0, -90.0, 0, true)
+	SetEntityAsMissionEntity(stove, true, true)
+	FreezeEntityPosition(stove, true)
 
-local crackPot = `prop_kitch_pot_sm`
-if not HasModelLoaded(crackPot) then
-    RequestModel(crackPot)
+	local crackPot = `prop_kitch_pot_sm`
+	if not HasModelLoaded(crackPot) then
+		RequestModel(crackPot)
 
-    while not HasModelLoaded(crackPot) do
-        Citizen.Wait(1)
-    end
-end
+		while not HasModelLoaded(crackPot) do
+			Citizen.Wait(1)
+		end
+	end
 
-local pot = CreateObject(crackPot, vector3(1103.37, -3195.93, -39.06), true)
-SetEntityRotation(pot, 0.0, 0, 180.0, 0, true)
-SetEntityAsMissionEntity(pot, true, true)
-FreezeEntityPosition(pot, true)
-
+	local pot = CreateObject(crackPot, vector3(1103.37, -3195.93, -39.06), true)
+	SetEntityRotation(pot, 0.0, 0, 180.0, 0, true)
+	SetEntityAsMissionEntity(pot, true, true)
+	FreezeEntityPosition(pot, true)
 -------------------------------------------------------------------------------------------
 -----------------------Control the Look of the Coke Room-----------------------------------
 -------------------------------------------------------------------------------------------
 -----Visit https://github.com/Bob74/bob74_ipl/wiki/Bikers:-Cocaine-lockup for options------
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
-Citizen.CreateThread(function()
     -- Getting the object to interact with
     BikerCocaine = exports['bob74_ipl']:GetBikerCocaineObject()
     -- Setting the style
