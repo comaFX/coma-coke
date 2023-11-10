@@ -4,7 +4,7 @@ CreateThread(function()
 	if Config.SpawnCokePed then
 		exports['qb-target']:SpawnPed({
 			model = 'a_m_y_stbla_02',
-			coords = vector4(115.13, -1686.75, 33.49, 248.3),
+			coords = Config.SpawnPedLocation,
 			minusOne = true, 
 			freeze = true, 
 			invincible = true, 
