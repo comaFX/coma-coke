@@ -109,8 +109,7 @@ local function CokeLeaf()
 	end, function()
 		ClearPedTasks(playerPed)
 		isProcessing = false
-	end)
-	
+	end)	
 end
 
 local function CutCokePowder()
