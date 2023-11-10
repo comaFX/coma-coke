@@ -26,5 +26,10 @@ Items to add to qb-core/shared/items.lua
 ["bakingsoda"] = {["name"] = "bakingsoda",  ["label"] = "Baking Soda",  ["weight"] = 200,  ["type"] = "item",  ["image"] = "bakingsoda.png",  ["unique"] = false,  ["useable"] = false,  ["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Baking Soda"},
 ["coca_leaf"] = {["name"] = "coca_leaf",  ["label"] = "Coca leaves",  ["weight"] = 400,  ["type"] = "item",  ["image"] = "coca_leaf.png",  ["unique"] = false,  ["useable"] = false, 	["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Unprocessed Coca leaves"},
 ["sulfuric_acid"] = {["name"] = "sulfuric_acid",  ["label"] = "Sulfuric Acid",  ["weight"] = 1000,  ["type"] = "item",  ["image"] = "sulfuric_acid.png",  ["unique"] = false,  ["useable"] = false,  ["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Chemicals, handle with care!"},
+---These Items should already be included with qb-drugs. Edit as needed or add if you do not have them
+['cokebaggy'] = {['name'] = 'cokebaggy',  ['label'] = 'Coke Baggies',  ['weight'] = 2,  ['type'] = 'item',  ['image'] = 'cocaine_baggy.png',  ['unique'] = false,  ['useable'] = true,  ['shouldClose'] = true,  ['combinable'] = nil,  ['description'] = 'To get happy real quick'},
+['crack_baggy'] = {['name'] = 'crack_baggy',  ['label'] = 'Bag of Crack',  ['weight'] = 2,  ['type'] = 'item',  ['image'] = 'crack_baggy.png',  ['unique'] = false,  ['useable'] = true,  ['shouldClose'] = true,  ['combinable'] = nil,  ['description'] = 'To get happy faster'},
+['coke_brick'] = {['name'] = 'coke_brick',  ['label'] = 'Key of Coke',  ['weight'] = 1000,  ['type'] = 'item',  ['image'] = 'coke_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,['combinable'] = nil,  ['description'] = 'Ready for distribution'},
+['coke_small_brick'] = {['name'] = 'coke_small_brick',  ['label'] = '1/4 Key of Coke',  ['weight'] = 250,  ['type'] = 'item',  ['image'] = 'coke_small_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,  ['combinable'] = nil,   ['description'] = 'Ready for distribution'},
 ```
 
