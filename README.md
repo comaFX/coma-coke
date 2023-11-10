@@ -1,5 +1,4 @@
 # coma-coke
-Rework of ps-drugprocessing's COKE ONLY.
 
 Items to add to qb-core/shared/items.lua
 ```lua
