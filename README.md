@@ -8,6 +8,8 @@ QB-CORE based drug processing for coke and crack using a modified version of [ps
 <li>Break down coke keys and 1/4 keys to raw coke</li>
 </ul>
 
+117.94, -1684.11, 32.5 Is the current location of the Coke Room. It can be easily moved using the config.lua
+
 | Dependencies  | Optional |
 | ------------- | ------------- |
 | [qb-core](https://github.com/qbcore-framework/qb-core)    | [pickle_xp](https://github.com/PickleModifications/pickle_xp)  |
