@@ -12,6 +12,7 @@ Config.PickleXP = false
 ---Use DrawText to show a menu to Enter/Exit the coke room by using the [E] key
 Config.UseMenu = true
 
+---Time it takes to complete an action
 Config.ProcessingTime = {
 	CocaHarvest = 10000,
 	SulfuricHarvest = 10000,
@@ -24,17 +25,19 @@ Config.ProcessingTime = {
 	CookCrack = 20000,
 }
 
---The amount of coca plants and sulfuric acid barrels to spawn
+---The amount of coca plants and sulfuric acid barrels to spawn
 Config.SpawnAmounts = {
 	Coca = 45,
 	SulfuricAcid = 25,
 }
---Amount to give for each harvest amount
+
+---Amount to give for each harvest amount
 Config.HarvestAmounts = {
 	Coca = 10,
 	SulfuricAcid = 5,
 }
 
+---The required XP for access to use
 Config.XPReq = {
 	EnterTheCokeRoom = 1,
 	ProcessCocaLeaves = 1,
@@ -46,6 +49,7 @@ Config.XPReq = {
 	BreakQBrick = 1,
 }
 
+---XP Gained for each process
 Config.XPGain = {
 	XPHarvestCoca = 1,
 	XPHarvestSulf = 1,
@@ -57,6 +61,8 @@ Config.XPGain = {
 	XPBreak = 1,
 	XPQBreak = 1,
 }
+
+---Amounts needed to process
 Config.CokeProcessing = {
 	-- Processing Coca Leaves into Raw Coke
 	SulfuricAcid = 5,
@@ -86,6 +92,7 @@ Config.CokeProcessing = {
 	CrackCooked = math.random(20,23),
 }
 
+---Circle Zone next to the door to Enter and Exit the coke room
 Config.EnterCokeLab = {
 	coords = vector4(116.26, -1686.14, 33.49, 45.06),
     radius = 2.0,
