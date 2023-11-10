@@ -8,6 +8,6 @@ Items to add to qb-core/shared/items.lua
 ['scale'] = {['name'] = 'scale',  ['label'] = 'Scale',  ['weight'] = 400,  ['type'] = 'item',  ['image'] = 'finescale.png',  ['unique'] = false,  ['useable'] = false,  ['shouldClose'] = false,  ['combinable'] = nil,   ['description'] = 'Tools of the trade'},
 ["bakingsoda"] = {["name"] = "bakingsoda",  ["label"] = "Baking Soda",  ["weight"] = 200,  ["type"] = "item",  ["image"] = "bakingsoda.png",  ["unique"] = false,  ["useable"] = false,  ["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Baking Soda"},
 ["coca_leaf"] = {["name"] = "coca_leaf",  ["label"] = "Coca leaves",  ["weight"] = 400,  ["type"] = "item",  ["image"] = "coca_leaf.png",  ["unique"] = false,  ["useable"] = false, 	["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Unprocessed Coca leaves"},
-["sulfuric_acid"] = {  ["name"] = "sulfuric_acid",  ["label"] = "Sulfuric Acid",  ["weight"] = 1000,  ["type"] = "item",  ["image"] = "sulfuric_acid.png",  ["unique"] = false,  ["useable"] = false,  ["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Chemicals, handle with care!"},
+["sulfuric_acid"] = {["name"] = "sulfuric_acid",  ["label"] = "Sulfuric Acid",  ["weight"] = 1000,  ["type"] = "item",  ["image"] = "sulfuric_acid.png",  ["unique"] = false,  ["useable"] = false,  ["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Chemicals, handle with care!"},
 
 ```
