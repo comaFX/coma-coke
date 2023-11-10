@@ -17,6 +17,16 @@ Config.UseMenu = true
 Config.EnterDoor = vector3(115.4, -1685.58, 32.85)
 Config.ExitDoor = vector3(1088.67, -3187.17, -38.99)
 
+---Circle Zone next to the door to Enter and Exit the coke room
+Config.EnterCokeLab = {
+	coords = vector4(116.26, -1686.14, 33.49, 45.06),
+    radius = 2.0,
+}
+Config.ExitCokeLab = {
+	coords = vector4(1088.75, -3187.95, -38.99, 179.31),
+    radius = 2.0,
+}
+
 ---Time it takes to complete an action
 Config.ProcessingTime = {
 	CocaHarvest = 10000,
@@ -95,16 +105,6 @@ Config.CokeProcessing = {
 	CrackBakingSoda = 6,
 	CrackPlastic = 1,
 	CrackCooked = math.random(20,23),
-}
-
----Circle Zone next to the door to Enter and Exit the coke room
-Config.EnterCokeLab = {
-	coords = vector4(116.26, -1686.14, 33.49, 45.06),
-    radius = 2.0,
-}
-Config.ExitCokeLab = {
-	coords = vector4(1088.75, -3187.95, -38.99, 179.31),
-    radius = 2.0,
 }
 
 Config.Zones = {
