@@ -8,8 +8,6 @@ QB-CORE based drug processing for coke and crack using a modified version of [ps
 <li>Break down coke keys and 1/4 keys to raw coke</li>
 </ul>
 
-117.94, -1684.11, 32.5 Is the current location of the Coke Room. It can be easily moved using the config.lua
-
 | Dependencies  | Optional |
 | ------------- | ------------- |
 | [qb-core](https://github.com/qbcore-framework/qb-core)    | [pickle_xp](https://github.com/PickleModifications/pickle_xp)  |
@@ -18,7 +16,7 @@ QB-CORE based drug processing for coke and crack using a modified version of [ps
 | [bob74_ipl](https://github.com/Bob74/bob74_ipl)  |            
 
 
-Items to add to qb-core/shared/items.lua
+# Items to add to qb-core/shared/items.lua
 ```lua
 ['cokekey'] = {['name'] = 'cokekey',  ['label'] = 'Coke Key',  ['weight'] = 5,  ['type'] = 'item',  ['image'] = 'coma-coke-key.png',  ['unique'] = false,  ['useable'] = false,  ['shouldClose'] = false,  ['combinable'] = nil,  ['description'] = 'Key to the coke room'},
 ["coke"] = {["name"] = "coke",  ["label"] = "Raw Coke",  ["weight"] = 100,  ["type"] = "item",  ["image"] = "coke.png",  ["unique"] = false,  ["useable"] = false,  ["shouldClose"] = false,  ["combinable"] = nil,  ["description"] = "Unprocessed Coke"},
@@ -33,3 +31,4 @@ Items to add to qb-core/shared/items.lua
 ['coke_small_brick'] = {['name'] = 'coke_small_brick',  ['label'] = '1/4 Key of Coke',  ['weight'] = 250,  ['type'] = 'item',  ['image'] = 'coke_small_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,  ['combinable'] = nil,   ['description'] = 'Ready for distribution'},
 ```
 
+### 117.94, -1684.11, 32.5 Is the current location of the Coke Room. It can be easily moved using the config.lua
