@@ -26,13 +26,13 @@ end)
 
 CreateThread(function()
 
-exports["qb-target"]:AddBoxZone("EnterTheCokeRoom", vector3(115.4, -1685.58, 32.85), 0.1, 1.5, {
+exports["qb-target"]:AddBoxZone("EnterTheCokeRoom", Config.EnterDoor, 0.1, 1.5, {
         name = "EnterTheCokeRoom",
         heading = 230,
         debugPoly = false,
 		minZ = 30.85,
 		maxZ = 34.85,
-}, {
+    }, {
         options = {
             {
                 type = "client",
@@ -44,7 +44,7 @@ exports["qb-target"]:AddBoxZone("EnterTheCokeRoom", vector3(115.4, -1685.58, 32.
     distance = 2.0
     })
 	
-exports["qb-target"]:AddBoxZone("ExitTheCokeRoom", vector3(1088.67, -3187.17, -38.99), 0.1, 1.5, {
+exports["qb-target"]:AddBoxZone("ExitTheCokeRoom", Config.ExitDoor, 0.1, 1.5, {
         name = "ExitTheCokeRoom",
         heading = 0,
         debugPoly = false,
