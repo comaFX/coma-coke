@@ -5,12 +5,17 @@ Config.KeyRequired = true
 
 ---Spawn a Ped to Interact with
 Config.SpawnCokePed = true
+Config.SpawnPedLocation = vector4(115.13, -1686.75, 33.49, 248.3)
 
 ---Use pickle_xp ( https://github.com/PickleModifications/pickle_xp )
 Config.PickleXP = false
 
 ---Use DrawText to show a menu to Enter/Exit the coke room by using the [E] key
 Config.UseMenu = true
+
+---Box zone locations for Enter and Exit door targeting
+Config.EnterDoor = vector3(115.4, -1685.58, 32.85)
+Config.ExitDoor = vector3(1088.67, -3187.17, -38.99)
 
 ---Time it takes to complete an action
 Config.ProcessingTime = {
