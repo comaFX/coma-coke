@@ -44,13 +44,13 @@ exports["qb-target"]:AddBoxZone("EnterTheCokeRoom", vector3(115.4, -1685.58, 32.
     distance = 2.0
     })
 	
-	exports["qb-target"]:AddBoxZone("ExitTheCokeRoom", vector3(1088.67, -3187.17, -38.99), 0.1, 1.5, {
+exports["qb-target"]:AddBoxZone("ExitTheCokeRoom", vector3(1088.67, -3187.17, -38.99), 0.1, 1.5, {
         name = "ExitTheCokeRoom",
         heading = 0,
         debugPoly = false,
 		minZ = -41.59,
 		maxZ = -37.59,
-    }, {
+}, {
         options = {
             {
                 type = "client",
