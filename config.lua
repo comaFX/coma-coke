@@ -124,5 +124,5 @@ Config.Zones = {
 	CokeBreak = {coords = vector3(1101.6, -3192.61, -38.99), name = ('Break Coke Key into Raw Coke'), radius = 3.0, heading = 359.48, width = 2.0, length = 2.0, minZ = -40.99, maxZ = -36.99},
 	CookCrack = {coords = vector3(1103.46, -3196.12, -38.06), name = ('Cook Raw Coke into crack'), radius = 3.0, heading = 266.18, width = 2.0, length = 1.4, minZ = -39.99, maxZ = -38.99},
 	CokeQBrick = {coords = vector3(1098.92, -3196.36, -37.99), name = ('Brick Up a 1/4 Key of coke'), radius = 1.0, heading = 32.38, width = 1.0, length = 1.0, minZ = -39.99, maxZ = -38.83},
-	CokeQBreak = {coords = vector3(1098.85, -3194.18, -38.99), name = ('Brick Up a 1/4 Key of coke'), radius = 1.0, heading = 88.35, width = 1.5, length = 1.5, minZ = -39.99, maxZ = -38.33},
+	CokeQBreak = {coords = vector3(1098.85, -3194.18, -38.99), name = ('Break Up a 1/4 Key of coke'), radius = 1.0, heading = 88.35, width = 1.5, length = 1.5, minZ = -39.99, maxZ = -38.33},
 }
