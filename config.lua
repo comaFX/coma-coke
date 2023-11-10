@@ -6,7 +6,7 @@ Config.KeyRequired = true
 ---Spawn a Ped to Interact with
 Config.SpawnCokePed = true
 
----Use pickle_xp
+---Use pickle_xp ( https://github.com/PickleModifications/pickle_xp )
 Config.PickleXP = false
 
 ---Use DrawText to show a menu to Enter/Exit the coke room by using the [E] key
