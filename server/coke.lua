@@ -9,12 +9,6 @@ RegisterServerEvent('coma-coke:pickedUpCocaLeaf', function()
 			if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPHarvestCoca)
 			end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPHarvestCoca))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 	else
 		TriggerClientEvent('QBCore:Notify', src, Lang:t("error.no_coca_leaf"), "error")
 	end
@@ -29,12 +23,6 @@ RegisterServerEvent('coma-coke:pickedUpSulfuricAcid', function()
 			if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPHarvestSulf)
 			end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPHarvestSulf))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 	end
 end)
 
@@ -51,12 +39,6 @@ RegisterServerEvent('coma-coke:processCocaLeaf', function()
 					if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPLeaves)
 					end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPLeaves))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 			else
 				Player.Functions.AddItem('coca_leaf', Config.CokeProcessing.CokeLeaf)
 				Player.Functions.AddItem('sulfuric_acid', Config.CokeProcessing.SulfuricAcid)
@@ -85,12 +67,6 @@ RegisterServerEvent('coma-coke:processCocaPowder', function()
 						if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPCut)
 						end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPCut))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 				else
 					Player.Functions.AddItem('coke', Config.CokeProcessing.Coke)
 					Player.Functions.AddItem('bakingsoda', Config.CokeProcessing.BakingSoda)
@@ -120,12 +96,6 @@ RegisterServerEvent('coma-coke:processCocaBrick', function()
 					if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPBrick)
 					end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPBrick))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 			else
 				Player.Functions.AddItem('coke', Config.CokeProcessing.CokeRaw)
 				Player.Functions.AddItem('plastic', Config.CokeProcessing.BrickPlastic)
@@ -148,12 +118,6 @@ RegisterServerEvent('coma-coke:processCocaQBrick', function()
 					if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPQBrick)
 					end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPQBrick))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 			else
 				Player.Functions.AddItem('coke', Config.CokeProcessing.QCokeRaw)
 				Player.Functions.AddItem('plastic', Config.CokeProcessing.QBrickPlastic)
@@ -174,12 +138,6 @@ RegisterServerEvent('coma-coke:processCocaBreak', function()
 				if Config.PickleXP then
 					exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPBreak)
 				end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPBreak))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 		else
 			Player.Functions.AddItem('coke_brick', Config.CokeProcessing.LargeBrick)
 		end
@@ -199,12 +157,6 @@ RegisterServerEvent('coma-coke:ProcessCocaQBreak', function()
 				if Config.PickleXP then
 					exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPQBreak)
 				end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPQBreak))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 		else
 			Player.Functions.AddItem('coke_small_brick', Config.CokeProcessing.LargeBrick)
 		end
@@ -227,12 +179,6 @@ RegisterServerEvent('coma-coke:processCookCrack', function()
 						if Config.PickleXP then
 						exports['pickle_xp']:AddPlayerXP(source, "drugs", Config.XPGain.XPCrack)
 						end
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-						local curRep = Player.PlayerData.metadata["dealerrep"]
-						Player.Functions.SetMetaData('dealerrep', (curRep + Config.XPGain.XPCrack))
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
 				else
 					Player.Functions.AddItem('coke', Config.CokeProcessing.CrackCokeRaw)
 					Player.Functions.AddItem('bakingsoda', Config.CokeProcessing.CrackBakingSoda)
