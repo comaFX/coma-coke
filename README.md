@@ -31,4 +31,4 @@ QB-CORE based drug processing for coke and crack using a modified version of [ps
 ['coke_small_brick'] = {['name'] = 'coke_small_brick',  ['label'] = '1/4 Key of Coke',  ['weight'] = 250,  ['type'] = 'item',  ['image'] = 'coke_small_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,  ['combinable'] = nil,   ['description'] = 'Ready for distribution'},
 ```
 
-### 117.94, -1684.11, 32.5 Is the current location of the Coke Room. It can be easily moved using the config.lua
+### 117.94, -1684.11, 32.5 Is the current location of the Coke Room. It can be easily moved using the [config.lua](https://github.com/comaFX/coma-coke/blob/main/config.lua)
