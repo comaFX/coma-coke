@@ -53,8 +53,7 @@ end)
 
 RegisterServerEvent('coma-coke:processCocaPowder', function()
 	local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
+    	local Player = QBCore.Functions.GetPlayer(src)
 	if Player.Functions.RemoveItem('coke', Config.CokeProcessing.Coke) then
 		if Player.Functions.RemoveItem('bakingsoda', Config.CokeProcessing.BakingSoda) then
 			if Player.Functions.RemoveItem('plastic', Config.CokeProcessing.CutPlastic) then
@@ -84,8 +83,7 @@ end)
 
 RegisterServerEvent('coma-coke:processCocaBrick', function()
 	local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
+  	local Player = QBCore.Functions.GetPlayer(src)
 	if Player.Functions.RemoveItem('coke', Config.CokeProcessing.CokeRaw) then
 		if Player.Functions.RemoveItem('plastic', Config.CokeProcessing.BrickPlastic) then
 			if Player.Functions.AddItem('coke_brick', Config.CokeProcessing.LargeBrick) then
@@ -106,8 +104,7 @@ end)
 
 RegisterServerEvent('coma-coke:processCocaQBrick', function()
 	local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
+    	local Player = QBCore.Functions.GetPlayer(src)
 	if Player.Functions.RemoveItem('coke', Config.CokeProcessing.QCokeRaw) then
 		if Player.Functions.RemoveItem('plastic', Config.CokeProcessing.QBrickPlastic) then
 			if Player.Functions.AddItem('coke_small_brick', Config.CokeProcessing.QBrick) then
@@ -128,8 +125,7 @@ end)
 
 RegisterServerEvent('coma-coke:processCocaBreak', function()
 	local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
+    	local Player = QBCore.Functions.GetPlayer(src)
 	if Player.Functions.RemoveItem('coke_brick', Config.CokeProcessing.LargeBrick) then
 		if Player.Functions.AddItem('coke', Config.CokeProcessing.CokeRaw) then
 			TriggerClientEvent("inventory:client:ItemBox", src, QBCore.Shared.Items['coke_brick'], "remove", Config.CokeProcessing.LargeBrick)
@@ -143,12 +139,10 @@ RegisterServerEvent('coma-coke:processCocaBreak', function()
 		end
 	end
 end)
-----
-----
+
 RegisterServerEvent('coma-coke:ProcessCocaQBreak', function()
 	local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
+ 	local Player = QBCore.Functions.GetPlayer(src)
 	if Player.Functions.RemoveItem('coke_small_brick', Config.CokeProcessing.QBrick) then
 		if Player.Functions.AddItem('coke', Config.CokeProcessing.QCokeRaw) then
 			TriggerClientEvent("inventory:client:ItemBox", src, QBCore.Shared.Items['coke_small_brick'], "remove", Config.CokeProcessing.QBrick)
@@ -165,8 +159,7 @@ end)
 
 RegisterServerEvent('coma-coke:processCookCrack', function()
 	local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
+    	local Player = QBCore.Functions.GetPlayer(src)
 	if Player.Functions.RemoveItem('coke', Config.CokeProcessing.CrackCokeRaw) then
 		if Player.Functions.RemoveItem('bakingsoda', Config.CokeProcessing.CrackBakingSoda) then
 			if Player.Functions.RemoveItem('plastic', Config.CokeProcessing.CrackPlastic) then
