@@ -1,5 +1,8 @@
 # coma-coke
 QB-CORE based drug processing for coke and crack using a modified version of [ps-drugprocessing](https://github.com/Project-Sloth/ps-drugprocessing)
+
+Feel free to join [Discord](https://discord.gg/nFZreK2NRX) for any questions or suggestions
+
 <ul>
 <li>Process coca leaves into raw coke</li>
 <li>Bag up raw coke for selling to locals or personal use</li>
@@ -30,7 +33,6 @@ QB-CORE based drug processing for coke and crack using a modified version of [ps
 ['coke_brick'] = {['name'] = 'coke_brick',  ['label'] = 'Key of Coke',  ['weight'] = 1000,  ['type'] = 'item',  ['image'] = 'coke_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,['combinable'] = nil,  ['description'] = 'Ready for distribution'},
 ['coke_small_brick'] = {['name'] = 'coke_small_brick',  ['label'] = '1/4 Key of Coke',  ['weight'] = 250,  ['type'] = 'item',  ['image'] = 'coke_small_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,  ['combinable'] = nil,   ['description'] = 'Ready for distribution'},
 ```
-[Discord](https://discord.gg/nFZreK2NRX)
 
 # Locations
 
