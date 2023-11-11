@@ -30,5 +30,19 @@ QB-CORE based drug processing for coke and crack using a modified version of [ps
 ['coke_brick'] = {['name'] = 'coke_brick',  ['label'] = 'Key of Coke',  ['weight'] = 1000,  ['type'] = 'item',  ['image'] = 'coke_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,['combinable'] = nil,  ['description'] = 'Ready for distribution'},
 ['coke_small_brick'] = {['name'] = 'coke_small_brick',  ['label'] = '1/4 Key of Coke',  ['weight'] = 250,  ['type'] = 'item',  ['image'] = 'coke_small_brick.png',  ['unique'] = true,  ['useable'] = false,  ['shouldClose'] = true,  ['combinable'] = nil,   ['description'] = 'Ready for distribution'},
 ```
+[Discord](https://discord.gg/nFZreK2NRX)
 
-### 117.94, -1684.11, 32.5 Is the current location of the Coke Room. It can be easily moved using the [config.lua](https://github.com/comaFX/coma-coke/blob/main/config.lua)
+# Locations
+
+### The current location of the Coke Room. It can be easily moved using the [config.lua](https://github.com/comaFX/coma-coke/blob/main/config.lua)
+117.94, -1684.11, 32.5
+
+### Coca Plant Spawn Location
+-1478.66, 4571.05, 37.68
+
+### Sulfuric Acid Spawn Location
+599.21, 2887.87, 39.77
+
+
+
+
