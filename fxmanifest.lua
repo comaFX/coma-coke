@@ -37,8 +37,3 @@ data_file 'DLC_ITYP_REQUEST' 'labs.ytyp'
 file 'stream/**.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/**.ytyp'
 --]]
-files {
-	'stream/mw_props.ytyp'
-}
-
-data_file 'DLC_ITYP_REQUEST' 'stream/mw_props.ytyp'
